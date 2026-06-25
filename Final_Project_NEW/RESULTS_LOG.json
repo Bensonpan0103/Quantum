@@ -1,0 +1,81 @@
+[
+  {
+    "run_id": "20260519_204450",
+    "run_time": "2026-05-19 20:44:50",
+    "settings": {
+      "snr_range": [
+        -20,
+        6
+      ],
+      "n_snr_points": 27,
+      "easy_cutoff": -8,
+      "hard_cutoff": -15,
+      "shots": 4096,
+      "window": 200,
+      "n_segs": 10,
+      "n_jobs": -1,
+      "feature_cols": [
+        "peak_value",
+        "fwhm",
+        "prominence",
+        "local_cv",
+        "qc_hom_vis"
+      ]
+    },
+    "encoding": {
+      "PHASE_STD_MAX": 1.594,
+      "PHASE_STD_MIN": 0.6656,
+      "dynamic_range": 0.9284
+    },
+    "rf_results": {
+      "Easy": {
+        "Classical only": {
+          "cv_auc": 0.9994,
+          "test_auc": 0.9992
+        },
+        "Quantum only": {
+          "cv_auc": 0.9246,
+          "test_auc": 0.8839
+        },
+        "Mixed (All)": {
+          "cv_auc": 0.9992,
+          "test_auc": 0.9994
+        }
+      },
+      "Hard": {
+        "Classical only": {
+          "cv_auc": 0.9916,
+          "test_auc": 0.9834
+        },
+        "Quantum only": {
+          "cv_auc": 0.8106,
+          "test_auc": 0.7383
+        },
+        "Mixed (All)": {
+          "cv_auc": 0.9913,
+          "test_auc": 0.9807
+        }
+      }
+    },
+    "cnn_results": {
+      "Easy": {
+        "test_auc": 0.9971,
+        "epochs": 98
+      },
+      "Hard": {
+        "test_auc": 0.9821,
+        "epochs": 78
+      }
+    },
+    "quantum_contribution": {
+      "auc_delta": {
+        "Easy": 0.0002,
+        "Hard": -0.0027
+      },
+      "feature_importance": {
+        "Easy": 0.2736,
+        "Hard": 0.1682
+      }
+    }
+  }
+]
